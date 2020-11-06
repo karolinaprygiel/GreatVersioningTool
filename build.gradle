@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'uj.java.pwj2020'
+version '1.0'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.8.6'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'uj.java.pwj2020.Gvt'
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
