@@ -4,29 +4,26 @@ My own version control system.
 ### How to use
 Run the class `uj.java.pwj2020.Gvt` with a command as a parameter.
 
-#### Commands
-##### init
+### Commands
+#### init
 Initializes new directory
 
-##### add
+#### add
 Adds to gvt file specified as a parameter, takes an optional message.
 
-##### detach
+#### detach
 Detach from gvt file specified as a parameter, takes an optional message.
 
-##### checkout
+#### checkout
 Restores files to the state of the specific version specified in the parameter.
 
-##### commit
+#### commit
 Commit changes to the file specified as a parameter, takes an optional message.
 
-##### history
+#### history
 Displays the version history in format: `{version number}: {commit message}`
 If no parameters specified, all versions are displayed.
 Parameter `-last {n}` displays last n versions.
 
-##### version
+#### version
 Shows details about version specified as a paramter.
-
-
-
